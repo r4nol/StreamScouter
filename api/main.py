@@ -9,8 +9,7 @@ from typing import List, Dict
 
 app = FastAPI()
 
-
 @app.get("/getRecommendations")
 def getRecommendations(movie_description: str) -> List[Dict[str, str]]:
-    recommendations = recommend_movie(movie_description, model, desc_embeddings, df, top_n=3)
+    recommendations = recommend_movie(movie_description, model, desc_embeddings, df, top_n=4)
     return display_recommendations(recommendations)
