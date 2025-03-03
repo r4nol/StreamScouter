@@ -13,6 +13,7 @@ Stream Scouter is a lightweight recommendation tool for matching Netflix titles 
 - 🌍 **Multilingual Support**: Works with multiple languages for diverse audiences.
 - 🔎 **Semantic Similarity Matching**: Finds the most relevant Netflix titles based on user input.
 - 📊 **Notebook Implementation**: Fully implemented in Jupyter Notebook for ease of experimentation and deployment.
+- 📱 **Mobility and accessibility**: Stream scouter now available on android, you can download it and try.
 
 ## Installation
 To set up and run StreamScouter locally, follow these steps:
