@@ -1,4 +1,4 @@
-# Stream Scouter
+# **Stream Scouter, now available on your phone!**
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://placehold.co/800x200/EEE/31343C?font=poppins&text=Stream%20Scouter">
   <source media="(prefers-color-scheme: light)" srcset="https://placehold.co/800x200/31343C/EEE?font=poppins&text=Stream%20Scouter">
@@ -39,7 +39,7 @@ To set up and run StreamScouter locally, follow these steps:
    ```bash
    jupyter notebook
    ```
-### To install app on your phone download this [apk](https://github.com/w1lderr/StreamScouterAndroidApp/blob/master/app-debug.apk)
+### To install app on your phone, download this [apk](https://github.com/w1lderr/StreamScouterAndroidApp/blob/master/app-debug.apk) file.
 
 ## Usage
 1. Run the cells in the Jupyter Notebook.
@@ -51,6 +51,10 @@ To set up and run StreamScouter locally, follow these steps:
 - **Jupyter Notebook** 📓
 - **Sentence Transformers** 🤖
 - **Pandas & NumPy** 📊
+- **Kotlin** 🏝
+- **Coil** 🖼
+- **Retrofit** 🌐
+- **Okhttp** 🌐
 
 ## Contributing
 We welcome contributions! Please open an issue or submit a pull request.
@@ -59,4 +63,4 @@ We welcome contributions! Please open an issue or submit a pull request.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-🐙 GitHub: [@r4nol](https://github.com/r4nol)
+🐙 GitHub: [@r4nol](https://github.com/r4nol) & [@w1lderrrr](https://github.com/w1lderr)
