@@ -39,6 +39,7 @@ To set up and run StreamScouter locally, follow these steps:
    ```bash
    jupyter notebook
    ```
+### To install app on your phone download this [apk](https://github.com/w1lderr/StreamScouterAndroidApp/blob/master/app-debug.apk)
 
 ## Usage
 1. Run the cells in the Jupyter Notebook.
