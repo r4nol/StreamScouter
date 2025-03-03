@@ -8,6 +8,7 @@ from rich.table import Table
 from rich import box
 from typing import List, Dict
 import requests
+import random
 
 # Determine whether to use a GPU (CUDA) if available or fall back to CPU
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -22,7 +23,7 @@ df = df.dropna(subset=['description']).reset_index(drop=True)
 model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', device=device)
 
 # Variables to get movie preview from TMDB
-TMDB_API_KEY = ""
+TMDB_API_KEY = "a4c3b1357109b507e9d18a15bbfb0a04"
 TMDB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
 
@@ -74,3 +75,25 @@ def display_recommendations(recommendations: pd.DataFrame) -> List[Dict[str, str
         }
         recommended_movies.append(movie_details)
     return recommended_movies
+
+
+def getTop4RandomRecommendations(df: pd.DataFrame) -> List[Dict[str, str]]:
+    """
+    Selects 4 random movies from the dataset and returns their details.
+    """
+    random_movies = df.sample(n=4)[['title', 'description', 'listed_in', 'release_year']]
+    random_movies_list = []
+    
+    for _, row in random_movies.iterrows():
+        movie_title = row['title']
+        poster_url = get_movie_poster(movie_title)
+        movie_details = {
+            "title": movie_title,
+            "description": row['description'],
+            "listed_in": row['listed_in'],
+            "release_year": str(row['release_year']),
+            "poster_url": poster_url
+        }
+        random_movies_list.append(movie_details)
+    
+    return random_movies_list
